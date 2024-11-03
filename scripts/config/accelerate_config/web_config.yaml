@@ -1,0 +1,32 @@
+### model
+model_name_or_path: none
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: /path_to_webrl/scripts/config/deepspeed_config/zero-3-offload.json
+
+### dataset
+dataset: none
+template: llama3_web
+cutoff_len: 16384
+max_samples: 100000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: none
+# logging_steps: 10
+# save_steps: 500
+# plot_loss: true
+# overwrite_output_dir: true
+
+### train
+# per_device_train_batch_size: 1
+gradient_accumulation_steps: 2
+# learning_rate: 1e-6
+# num_train_epochs: 1
+bf16: true
+ddp_timeout: 180000000
+save_only_model: true

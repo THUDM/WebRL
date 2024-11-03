@@ -1,0 +1,44 @@
+### model
+model_name_or_path: <path_to_base_model>
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_offload_config.json
+
+### dataset
+dataset: web_orm
+template: llama3
+cutoff_len: 16384
+max_samples: 100000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: <path_to_output>
+logging_steps: 10
+# save_steps: 500
+save_strategy: epoch
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-6
+num_train_epochs: 4
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+save_only_model: true
+
+### eval
+eval_dataset: web_orm_test
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 50
+
+### report
+report_to: tensorboard

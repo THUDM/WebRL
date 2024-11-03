@@ -1,0 +1,14 @@
+wandb_key: <your_wandb_token>
+
+capacity: 100000 # replay buffer size
+lm_lr: 1e-6
+critic_lr: 1e-6
+max_grad_norm: 1
+gamma: 0.9
+
+do_sample: True
+temperature: 1.0
+max_new_tokens: 512
+
+use_wandb: True
+project_name: "webrl"

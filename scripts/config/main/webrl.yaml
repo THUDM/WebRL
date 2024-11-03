@@ -1,0 +1,20 @@
+defaults:
+  - default
+  - _self_
+
+save_path: /save_path
+run_name: "webrl"
+
+# training
+policy_lm: /path_to_policy_lm # safetensors files of paramerters of the actor model
+critic_lm: /path_to_the_base_lm_of_critic # safetensors files of paramerters of the critic model
+
+critic_epochs: 1 # number of epochs for the critic each phase
+actor_epochs: 1 # number of epochs for training the actor each phase
+batch_size: 1 # batch size for training the actor and critic
+
+critic_resume_path: /path_to_critic_lm # .bin file of paramerters of the critic model
+
+offline_data_path: /path_to_the_data_contain_rollout_and_history_data
+
+checkpointing_steps: 400

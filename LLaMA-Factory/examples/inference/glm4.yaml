@@ -1,0 +1,7 @@
+model_name_or_path: /rl/web_policy/glm-4-9b/sft_template_only_fix/checkpoint-799
+template: llama3_web
+infer_backend: vllm
+vllm_enforce_eager: true
+vllm_maxlen: 16384
+
+# VLLM_WORKER_MULTIPROC_METHOD=spawn llamafactory-cli api examples/inference/glm4.yaml

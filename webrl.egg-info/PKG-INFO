@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: webrl
+Version: 0.1.0
+Summary: Research code for webrl
+License: MIT
+Keywords: webrl
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types==0.6.0
+Requires-Dist: blis==0.7.11
+Requires-Dist: brotlipy==0.7.0
+Requires-Dist: catalogue==2.0.10
+Requires-Dist: certifi
+Requires-Dist: cffi
+Requires-Dist: charset-normalizer
+Requires-Dist: click==8.1.7
+Requires-Dist: cloudpathlib==0.16.0
+Requires-Dist: cloudpickle==3.0.0
+Requires-Dist: confection==0.1.3
+Requires-Dist: contourpy==1.1.1
+Requires-Dist: cryptography
+Requires-Dist: cycler==0.12.1
+Requires-Dist: cymem==2.0.8
+Requires-Dist: Farama-Notifications==0.0.4
+Requires-Dist: fonttools==4.43.1
+Requires-Dist: gym
+Requires-Dist: datasets==2.20.0
+Requires-Dist: deepspeed==0.15.1
+Requires-Dist: gym-notices
+Requires-Dist: gymnasium
+Requires-Dist: hashids==1.3.1
+Requires-Dist: jericho==3.1.2
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: kiwisolver==1.4.5
+Requires-Dist: langcodes==3.3.0
+Requires-Dist: MarkupSafe==2.1.3
+Requires-Dist: matplotlib==3.8.1
+Requires-Dist: mementos==1.3.1
+Requires-Dist: more-itertools==10.1.0
+Requires-Dist: murmurhash==1.0.10
+Requires-Dist: networkx==3.2.1
+Requires-Dist: numpy
+Requires-Dist: packaging==23.2
+Requires-Dist: Pillow
+Requires-Dist: pluggy
+Requires-Dist: preshed==3.0.9
+Requires-Dist: prompt-toolkit==3.0.39
+Requires-Dist: pycosat
+Requires-Dist: pycparser
+Requires-Dist: pydantic==2.4.2
+Requires-Dist: pydantic_core==2.10.1
+Requires-Dist: pyOpenSSL
+Requires-Dist: pyparsing==3.1.1
+Requires-Dist: PySocks
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml
+Requires-Dist: ruamel.yaml.clib
+Requires-Dist: six
+Requires-Dist: smart-open==6.4.0
+Requires-Dist: spacy==3.7.2
+Requires-Dist: spacy-legacy==3.0.12
+Requires-Dist: spacy-loggers==1.0.5
+Requires-Dist: srsly==2.4.8
+Requires-Dist: TatSu
+Requires-Dist: thinc==8.2.1
+Requires-Dist: toolz
+Requires-Dist: tqdm
+Requires-Dist: typer==0.9.0
+Requires-Dist: typing_extensions==4.8.0
+Requires-Dist: urllib3
+Requires-Dist: wasabi==1.1.2
+Requires-Dist: wcwidth==0.2.9
+Requires-Dist: weasel==0.3.3
+Requires-Dist: zstandard
+Requires-Dist: hydra-core
+Requires-Dist: gradio
+Requires-Dist: torch==2.3.1
+Requires-Dist: transformers==4.44.2
+Requires-Dist: accelerate==0.32.1
+Requires-Dist: peft
+Requires-Dist: openai
+Requires-Dist: wandb
+Requires-Dist: beautifulsoup4
+Requires-Dist: sentencepiece
+Requires-Dist: pyinstrument
+Requires-Dist: memory_profiler
+Requires-Dist: appium-python-client
+Requires-Dist: tenacity
+Requires-Dist: termcolor
+Requires-Dist: google-generativeai
+Requires-Dist: jupyter
+
+<div align="center">
+
+# WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning
+
+</div>
+
+![image](https://github.com/user-attachments/assets/18fe6252-2afa-44a3-83f4-ed2ee55abb2e)
+
+***
+
+## 🚀 Quick Start
+
+**Dependencies**
+
+First, create a conda environment and install all pip package requirements.
+
+```bash
+conda create -n webrl python==3.10
+conda activate webrl
+
+cd webrl
+pip install -e .
+```
+
+**Train SFT model**
+
+We use LLaMA-Factory to train the SFT baseline, which is the starting model for WebRL. You can train the SFT baseline with the following commands:
+
+```bash
+cd LLaMA-Factory
+bash run.sh examples/train_full/llama3_full_policy_web.yaml
+```
+
+**Train ORM**
+
+We use LLaMA-Factory to train the ORM. You can train the ORM with the following commands:
+
+```bash
+cd LLaMA-Factory
+bash run.sh examples/train_full/llama3_full_orm_web.yaml
+```
+
+**Train WebRL**
+
+After training the SFT baseline, you should use it as the initial model of the actor and critic.  You can train WebRL with the following commands:
+
+```bash
+bash run_multinode.sh
+```
