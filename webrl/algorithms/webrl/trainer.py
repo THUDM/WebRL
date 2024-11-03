@@ -91,6 +91,12 @@ class WebRLTrainer():
         v2 = v2.reshape(-1, 2)
         nv1 = nv1.reshape(-1, 2)
         nv2 = nv2.reshape(-1, 2)
+        
+        v1 = self.softmax(v1)
+        v2 = self.softmax(v2)
+        nv1 = self.softmax(nv1)
+        nv2 = self.softmax(nv2)
+        
         regression_target = (mc_return > 0).long()
         v1_loss = self.criterion(v1, regression_target)
         v1_acc = (v1.argmax(dim = 1) == regression_target).float().mean()
@@ -103,8 +109,7 @@ class WebRLTrainer():
         v1_loss, v2_loss = v1_loss.detach().cpu(), v2_loss.detach().cpu()
         v1_acc, v2_acc = v1_acc.detach().cpu(), v2_acc.detach().cpu()
         
-        v1 = self.softmax(v1)[:, 1]
-        v2 = self.softmax(v2)[:, 1]
+        
         info = {"v1.loss": v1_loss,\
                 "v2.loss": v2_loss,\
                 "v1.acc": v1_acc,\
