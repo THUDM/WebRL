@@ -128,7 +128,7 @@ def create_accelerator_and_postprocess(training_args):
     
     return accelerator
 
-def get_accelerator(config_file='/workspace/qzh/LLaMA-Factory-policy/examples/train_full/llama3_full_policy_web.yaml'):
+def get_accelerator(config_file):
     args_path = config_file
     with open(args_path, 'r') as file:
         args = yaml.safe_load(file)
@@ -143,6 +143,3 @@ def get_accelerator(config_file='/workspace/qzh/LLaMA-Factory-policy/examples/tr
     
     propagate_args_to_deepspeed(accelerator, training_args, True)
     return accelerator
-
-if __name__ == '__main__':
-    get_accelerator()
