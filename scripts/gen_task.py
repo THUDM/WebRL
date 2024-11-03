@@ -9,8 +9,8 @@ from webrl.models import VLMDoubleCritic
 random.seed(42)
 
 client = OpenAI(
-    base_url = "https://one-api.glm.ai/v1",
-    api_key = 'sk-H1HnEQuU1hyFaJywFd542e61C1684e21Bb44B1684d916d5d'
+    base_url = "",
+    api_key = ""
 )
 
 PROMPT = """You are a smart task creator for a website intelligent assistant. Your goal is to generate clear and practical tasks that the assistant can assist people with when they use {web} in their daily lives. These tasks should encompass a wide range of possible instructions and questions that may arise when using {web} website.
