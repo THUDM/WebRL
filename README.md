@@ -4,7 +4,7 @@
 
 </div>
 
-![image](https://github.com/user-attachments/assets/84ed9842-ec01-4625-b2fa-25c9c2e69c84)
+![image](./assets/webrl.png)
 
 ***
 
