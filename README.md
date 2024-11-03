@@ -48,11 +48,16 @@ After training the SFT baseline, you should use it as the initial model of the a
 bash run_multinode.sh
 ```
 
-
 This command is used to train the actor and critic in each phase.
 
 ### Generating New Instructions
 
-### Interaction
+You can generate new instructions with the following commands:
 
-### Evaluation
+```bash
+python scripts/gen_task.py
+```
+
+### Interaction and Evaluation
+
+`TODO`: The script for interaction with WebArena is based on [VAB-WebArena-Lite](https://github.com/THUDM/VisualAgentBench/tree/main), with specific modifications set to be published soon.
