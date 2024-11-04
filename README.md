@@ -24,7 +24,7 @@ pip install -e .
 
 ### Train SFT model
 
-We use LLaMA-Factory to train the SFT baseline, which is the starting model for WebRL. You can train the SFT baseline with the following commands:
+We use LLaMA-Factory to train the SFT baseline, which is the starting model for WebRL. We release the code and data used for training. You can train the SFT baseline with the following commands:
 
 ```bash
 cd LLaMA-Factory
