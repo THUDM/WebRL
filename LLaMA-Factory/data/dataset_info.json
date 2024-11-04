@@ -1,6 +1,6 @@
 {
   "web_policy_sft": {
-    "file_name": "path_to_webarena_lite_train_data",
+    "file_name": "web_policy_sft",
     "formatting": "sharegpt",
     "columns": {
         "messages": "conversations"
