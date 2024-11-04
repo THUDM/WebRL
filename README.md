@@ -60,4 +60,4 @@ python scripts/gen_task.py
 
 ### Interaction and Evaluation
 
-`TODO`: The script for interaction with WebArena is based on [VAB-WebArena-Lite](https://github.com/THUDM/VisualAgentBench/tree/main), with specific modifications set to be published soon.
+`TODO`: The script for interaction with WebArena is based on [VAB-WebArena-Lite](https://github.com/THUDM/VisualAgentBench/tree/main), with specific modifications set to be published in this week.
