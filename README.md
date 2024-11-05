@@ -11,7 +11,6 @@
 ***
 
 WebRL, a self-evolving online curriculum learning framework designed for training web agents, targeting the WebArena environment. 
-It also serves as a technique for [AutoGLM](https://xiao9905.github.io/AutoGLM/).
 
 ## 🚀 Quick Start
 
