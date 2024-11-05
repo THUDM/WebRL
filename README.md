@@ -32,6 +32,9 @@ The WebRL-GLM-4-9B checkpoint was released here and we use it:
 
 - [WebRL-GLM-4-9B checkpoint](https://huggingface.co/THUDM/webrl-glm-4-9b)
 
+We will also provide the checkpoint of ORM soon.
+
+
 ### Train SFT model
 
 We use LLaMA-Factory to train the SFT baseline, which is the starting model for WebRL. We release the code and data used for training. You can train the SFT baseline with the following commands:
@@ -39,15 +42,6 @@ We use LLaMA-Factory to train the SFT baseline, which is the starting model for 
 ```bash
 cd LLaMA-Factory
 bash run.sh examples/train_full/llama3_full_policy_web.yaml
-```
-
-### Train ORM
-
-We use LLaMA-Factory to train the ORM. You can train the ORM with the following commands:
-
-```bash
-cd LLaMA-Factory
-bash run.sh examples/train_full/llama3_full_orm_web.yaml
 ```
 
 ### Train WebRL
