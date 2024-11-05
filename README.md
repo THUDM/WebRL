@@ -61,3 +61,13 @@ python scripts/gen_task.py
 ### Interaction and Evaluation
 
 `TODO`: The script for interaction with WebArena is based on [VAB-WebArena-Lite](https://github.com/THUDM/VisualAgentBench/tree/main), with specific modifications set to be published in this week.
+
+## Citation
+```
+@artical{qi2024webrl,
+      title={WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning}, 
+      author={Zehan Qi and Xiao Liu and Iat Long Iong and Hanyu Lai and Xueqiao Sun and Xinyue Yang and Jiadai Sun and Yu Yang and Shuntian Yao and Tianjie Zhang and Wei Xu and Jie Tang and Yuxiao Dong},
+      journal={arXiv preprint arXiv:2411.02337},
+      year={2024},
+}
+```
