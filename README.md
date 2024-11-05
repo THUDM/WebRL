@@ -8,6 +8,9 @@
 
 ***
 
+WebRL, a self-evolving online curriculum learning framework designed for training web agents, targeting the WebArena environment. 
+It also serves as a technique for [AutoGLM](https://xiao9905.github.io/AutoGLM/).
+
 ## 🚀 Quick Start
 
 ### Dependencies
@@ -21,6 +24,12 @@ conda activate webrl
 cd WebRL
 pip install -e .
 ```
+
+### Model checkpoint
+
+The WebRL-GLM-4-9B checkpoint was released here and we use it:
+
+- [WebRL-GLM-4-9B checkpoint](https://huggingface.co/THUDM/webrl-glm-4-9b)
 
 ### Train SFT model
 
