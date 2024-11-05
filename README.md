@@ -6,6 +6,8 @@
 
 ![image](./assets/webrl.png)
 
+*Technique adopted in [AutoGLM](https://xiao9905.github.io/AutoGLM/), a series of Phone Use and Web Browser Use Foundation Agents*
+
 ***
 
 WebRL, a self-evolving online curriculum learning framework designed for training web agents, targeting the WebArena environment. 
