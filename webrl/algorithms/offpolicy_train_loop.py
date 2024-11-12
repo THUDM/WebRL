@@ -52,7 +52,7 @@ def offpolicy_train_loop(agent,
     
     replay_buffer= ReplayBuffer(batch_size= batch_size, capacity=capacity)
     
-    all_trajectories = torch.load(offline_data_path)[:400]
+    all_trajectories = torch.load(offline_data_path)
     
     if accelerator_critic.is_main_process:
         print(f"The number of offline trajectories is {len(all_trajectories)}")
