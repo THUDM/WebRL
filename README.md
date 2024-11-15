@@ -72,7 +72,7 @@ python scripts/gen_task.py
 
 The instruction and script for interaction with WebArena is provided in [VAB-WebArena-Lite](https://github.com/THUDM/VisualAgentBench/tree/main/VAB-WebArena-Lite).
 
-You can implement the interaction process of WebRL according to the ``Evaluating in WebRL Setting (Text Modal)`` section of VAB-WebArena-Lite.
+You can implement the interaction process of WebRL according to the [``Evaluating in WebRL Setting (Text Modal)``](https://github.com/THUDM/VisualAgentBench/tree/main/VAB-WebArena-Lite#-evaluating-in-webrl-setting-text-modal) section of VAB-WebArena-Lite.
 
 ## Citation
 ```
