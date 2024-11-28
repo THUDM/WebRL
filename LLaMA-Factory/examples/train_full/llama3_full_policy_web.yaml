@@ -35,8 +35,7 @@ ddp_timeout: 180000000
 save_only_model: true
 
 ### eval
-# val_size: 0.1
-eval_dataset: web_policy_sft_test
+val_size: 0.1
 per_device_eval_batch_size: 1
 eval_strategy: steps
 eval_steps: 50
