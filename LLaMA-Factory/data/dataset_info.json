@@ -6,29 +6,6 @@
         "messages": "conversations"
     }
   },
-  "web_policy_sft_test": {
-    "file_name": "path_to_validation_data",
-    "formatting": "sharegpt",
-    "columns": {
-        "messages": "conversations"
-    }
-  },
-  "web_orm": {
-    "file_name": "path_to_data_to_train_orm",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "system": "system"
-    }
-  },
-  "web_orm_test": {
-    "file_name": "path_to_validation_data",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "system": "system"
-    }
-  },
   "identity": {
     "file_name": "identity.json"
   },
