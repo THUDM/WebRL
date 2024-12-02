@@ -58,9 +58,11 @@ python scripts/gen_task.py
 
 ### 🛜 Interaction and Evaluation
 
-For details on environment deployment and interaction code, please refer to [interaction](./interaction).
+The instruction and script for interaction with WebArena is provided in [VAB-WebArena-Lite](https://github.com/THUDM/VisualAgentBench/tree/main/VAB-WebArena-Lite).
+You can implement the interaction process of WebRL according to the [``Evaluating in WebRL Setting (Text Modal)``](https://github.com/THUDM/VisualAgentBench/tree/main/VAB-WebArena-Lite#-evaluating-in-webrl-setting-text-modal) section of VAB-WebArena-Lite.
 
-To enable interaction with WebArena, you need to configure each task in the same format as the sample test case provided in the ``test_webarena_lite.raw.json`` file. Below is the template for a task configuration:
+
+To enable interaction with WebArena, you need to configure each task in the same format as the sample test case provided in the ``test_webarena_lite.raw.json`` file in VAB-WebArena-Lite. Below is the template for a task configuration:
 
 ```python
 {
