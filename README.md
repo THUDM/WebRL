@@ -26,7 +26,13 @@ pip install -e .
 
 ### Model checkpoint
 
-We will release the checkpoint of ORM, Llama3.1-8B trained with WebRL, and Llama3.1-70B trained with WebRL after the rebuttal period, due to the need for anonymity.
+The WebRL-GLM-4-9B checkpoint was released here and we use it:
+
+- [WebRL-GLM-4-9B checkpoint](https://huggingface.co/THUDM/webrl-glm-4-9b)
+- [WebRL-Llama-3.1-8B checkpoint](https://huggingface.co/THUDM/webrl-llama-3.1-8b)
+- [WebRL-Llama-3.1-70B checkpoint](https://huggingface.co/THUDM/webrl-llama-3.1-70b)
+
+We will also provide the checkpoint of ORM soon.
 
 
 ### ✈️ Train SFT model
