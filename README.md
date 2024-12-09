@@ -37,8 +37,8 @@ The WebRL-GLM-4-9B checkpoint was released here and we use it:
 - [WebRL-GLM-4-9B checkpoint](https://huggingface.co/THUDM/webrl-glm-4-9b)
 - [WebRL-Llama-3.1-8B checkpoint](https://huggingface.co/THUDM/webrl-llama-3.1-8b)
 - [WebRL-Llama-3.1-70B checkpoint](https://huggingface.co/THUDM/webrl-llama-3.1-70b)
+- [ORM-Llama-3.1-8B checkpoint](https://huggingface.co/THUDM/webrl-orm-llama-3.1-8b/tree/main)
 
-We will also provide the checkpoint of ORM soon.
 
 
 ### ✈️ Train SFT model
