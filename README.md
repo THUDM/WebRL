@@ -92,7 +92,7 @@ To enable interaction with WebArena, you need to configure each task in the same
   "task_id": <Your task id>
   "require_login": true,
   "storage_state": "./.auth/shopping_admin_state.json",
-  "start_url": <start url of site> # possible choices: "__SHOPPING_ADMIN__", "__SHOPPING__", "__GITLAB__", "__MAP__", "__REDDIT__"
+  "start_url": <start url of site>, # possible choices: "__SHOPPING_ADMIN__", "__SHOPPING__", "__GITLAB__", "__MAP__", "__REDDIT__"
   "geolocation": null,
   "intent_template": "",
   "instantiation_dict": {},
