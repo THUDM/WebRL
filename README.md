@@ -144,10 +144,10 @@ Both output_path and output_path + '_filter' are formatted for direct use in sub
 
 ## Citation
 ```
-@artical{qi2024webrl,
-      title={WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning}, 
-      author={Qi, Zehan and Liu, Xiao and Iong, Iat Long and Lai, Hanyu and Sun, Xueqiao and Yang, Xinyue and Sun, Jiadai and Yang, Yu and Yao, Shuntian and Zhang, Tianjie and others},
-      journal={arXiv preprint arXiv:2411.02337},
-      year={2024},
+@article{qi2024webrl,
+  title={WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning},
+  author={Qi, Zehan and Liu, Xiao and Iong, Iat Long and Lai, Hanyu and Sun, Xueqiao and Yang, Xinyue and Sun, Jiadai and Yang, Yu and Yao, Shuntian and Zhang, Tianjie and others},
+  journal={arXiv preprint arXiv:2411.02337},
+  year={2024}
 }
 ```
