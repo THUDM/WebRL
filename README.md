@@ -138,9 +138,10 @@ python scripts/process_data.py \
     - output_path: Contain data without historical experiences.
     - output_path + '_filter': Contain data with historical experiences.
 - `rollout_path`: Path to the `traces` subfolder containing initial interaction trajectories, typically generated after running Webarena-Lite.
-- `experience_paths`: List of file paths to processed interaction data (`output_path`) from previous phases.
+- `experience_paths`: List of file paths to processed interaction data (`output_path`) from previous phases. We provide the SFT data with the modified format that can be used as experience data, in `/scripts/webarena_lite_sft.pt`.
 
 Both output_path and output_path + '_filter' are formatted for direct use in subsequent training.
+
 
 ## Citation
 ```
