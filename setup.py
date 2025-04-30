@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
     name="webrl",
     version="0.1.0",
-    url="https://github.com/THUDM/WebRL"
+    url="https://github.com/THUDM/WebRL",
     description="Research code for webrl",
     long_description=open("README.md", "r", encoding='utf-8').read(),
     long_description_content_type="text/markdown",
