@@ -29,6 +29,51 @@ Your need to draw inspiration from the #Given Task# to create new tasks. These n
 #Created Task#
 """
 
+FILTER_POMPT = """
+You are a task filtering expert, and you need to determine whether a given task is feasible or not.
+These tasks are primarily distributed across the following five platforms: MAP (OpenStreetMap), Reddit, GitLab, CMS (online store content management system), and OSS (OneStopShop). You need to make judgments based on the following criteria:
+
+1. For tasks in MAP:
+Tasks that are supported by MAP itself are feasible unless they involve the following goals, which are deemed infeasible:
+- Viewing traffic flow, accidents, and road closure information.
+- Checking the weather conditions of a specific location.
+- Marking and saving favorite locations, such as home, work, or travel destinations.
+- Sharing real-time location.
+- Making reservations and bookings, such as restaurant reservations or hotel bookings.
+- Flight and train inquiries.
+- Viewing event locations and activities, such as concerts, exhibitions, and their details.
+
+2. For tasks in Reddit:
+Tasks supported by Reddit is feasible.
+
+3. For tasks in GitLab:
+Tasks supported by GitLab is feasible.
+
+4. For tasks in CMS:
+Tasks that are supported by CMS itself are feasible unless they involve the following goals, which are deemed infeasible:
+- Sending order information to customers via email.
+- Automatically generating e-invoices for customers.
+- Handling customer returns or refund requests.
+- Supporting profile updates.
+- Recommending products based on customer behavior.
+
+5. For tasks in OSS:
+Tasks that are supported by OSS itself are feasible unless they involve the following goals, which are deemed infeasible:
+- Filtering out discounted products.
+- Modifying the delivery address for a product.
+- Adding payment information such as credit cards, e-wallets, or bank transfers.
+- Displaying order status (e.g., pending payment, to be shipped, in transit, completed).
+- Providing order tracking functionality to view real-time logistics.
+- Offering online customer service to answer questions.
+- Supporting after-sales service requests, such as refunds or repairs.
+
+You should evaluate the following tasks based on these rules and respond in the following format:
+Reason + Answer (where the answer is "[YES]" or "[NO]").
+
+The website of the task is: {web}
+The task is: {task}
+"""
+
 def call_gpt(model='gpt-3.5-turbo', temperature=0, top_p=0, prompt=''):
     response = client.chat.completions.create(
                 model=model,
