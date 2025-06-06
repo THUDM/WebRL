@@ -29,8 +29,7 @@ Your need to draw inspiration from the #Given Task# to create new tasks. These n
 #Created Task#
 """
 
-FILTER_POMPT = """
-You are a task filtering expert, and you need to determine whether a given task is feasible or not.
+FILTER_POMPT = """You are a task filtering expert, and you need to determine whether a given task is feasible or not.
 These tasks are primarily distributed across the following five platforms: MAP (OpenStreetMap), Reddit, GitLab, CMS (online store content management system), and OSS (OneStopShop). You need to make judgments based on the following criteria:
 
 1. For tasks in MAP:
